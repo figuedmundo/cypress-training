@@ -2,7 +2,6 @@
 
 import { MyAccountPage } from '../'
 
-
 export default class AuthenticationPage {
   constructor() {
     this._emailCreateTextbox = '#email_create';
@@ -15,13 +14,8 @@ export default class AuthenticationPage {
   }
 
   static visit() {
-    // cy.visit(AuthenticationPage.uri());
     cy.visit('/index.php?controller=authentication&back=my-account');
     return new this;
-  }
-
-  static uri() {
-    return "/index.php?controller=authentication&back=my-account";
   }
 
   setCreateEmail(email) {
