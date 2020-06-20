@@ -15,7 +15,8 @@ export default class AuthenticationPage {
 
   static visit() {
     cy.visit('/index.php?controller=authentication&back=my-account');
-    return new this;
+    console.log(cy.window())
+    return new AuthenticationPage();
   }
 
   setCreateEmail(email) {
@@ -54,5 +55,9 @@ export default class AuthenticationPage {
 class GoTo {
   static myAccountPage(){
     return new MyAccountPage();
+  }
+
+  static authenticationPage(){
+    return new AuthenticationPage();
   }
 }

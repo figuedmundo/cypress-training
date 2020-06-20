@@ -14,6 +14,17 @@ context('Cypress Training', () => {
       .myAccountPage()
       .validateTitle("MY ACCOUNT")
   })
+
+  it.only('Login user', () => {
+    const email = 'user1@test.com.bo';
+
+    AuthenticationPage
+      .visit()
+      .setLoginEmail('inv')
+      .clickSignIn()
+      .authenticationPage()
+      .validateEmailOk()
+  })
 })
 
 
