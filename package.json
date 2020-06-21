@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "./node_modules/.bin/cypress open"
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:run:record": "./node_modules/.bin/cypress run --record --key 0e94173e-cf6d-4d83-9602-c8cbe299ed37"
 
   },
   "author": "",

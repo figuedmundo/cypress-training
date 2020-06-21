@@ -15,7 +15,7 @@ context('Cypress Training', () => {
       .validateTitle("MY ACCOUNT")
   })
 
-  it.only('Login user', () => {
+  it('Login user', () => {
     const email = 'user1@test.com.bo';
 
     AuthenticationPage

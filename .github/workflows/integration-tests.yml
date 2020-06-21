@@ -9,6 +9,12 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v1
+        with:
+          record: true
+          group: 'Automation Practice'
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: 0e94173e-cf6d-4d83-9602-c8cbe299ed37
 
 # name: integration-tests
 # on: [push]
@@ -27,4 +33,4 @@ jobs:
 #           working-directory: frontend
 #         env:
 #           # pass the Dashboard record key as an environment variable
-#           CYPRESS_RECORD_KEY: e63a7946-58c1-48bf-9a6b-c0c832a5g137
+#           CYPRESS_RECORD_KEY: 0e94173e-cf6d-4d83-9602-c8cbe299ed37
